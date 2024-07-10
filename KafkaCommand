@@ -1,0 +1,13 @@
+Commands to start Zookeeper and Kafka :
+# For Linux users
+bin/zookeeper-server-start.sh config/zookeeper.properties
+# For Windows users
+bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+
+Open another terminal session.
+Run the following command to start the Kafka broker:
+bin/kafka-server-start.sh config/server.properties
+
+
+To check kafka topics
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
